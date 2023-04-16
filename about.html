@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 1;
+  &:before {
+    content: '';
+   
+    background: linear-gradient(to right, transparent, #000, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+   
+    color: #000000;
+    background-color: #F8F9FA;
+  }
+}
+.alert-info{
+    background-color:#D5E6F7;
+    border: none;
+    text-align: start;
+    font-size: 1.2REM;
+  
+    
+}
+.btn-light{
+
+    width: 20%;
+    text-align: center;
+    font-size: 2rem;
+    border: #D5E6F7;
+    margin-top: 15%;
+    margin-left: 20%;
+   
+}
+.card{
+    border: none;
+}
+.fs-5{
+   
+    color: rgb(199, 196, 196);
+    margin: 0.5rem;
+}
+    </style>
+</head>
+<body>
+    
+  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="  padding: 1rem  3rem;">
+            <div class="container-fluid">
+              <div class="the-logo">
+                <a class="navbar-brand the-logo" href="./index.html"
+                  ><img src="./images/logo.png" alt="logo"
+                /></a>
+              </div>
+      
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item login">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item register">
+                    <a class="btn btn-primary" href="register.html">Register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <div class="p-5 text-center bg-light">
+        <h1 class="mb-3">Meet our team of peak dental experts</h1>
+        <h4 class="mb-3" style="font-weight: 300;">Staffed with experienced professionals who care about educating their patients about excellent oral health</h4>
+
+        <div class="p-5 text-center bg-light">
+            <h1 class="mb-5">Our Doctors</h1>
+    <div class="container "> 
+
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 27.5rem;">
+                    <img src="/images/Screenshot 2023-04-14 163851.png" class="card-img-top" alt="Dr. Jake Duong">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Jake Duong</h5>
+                        <p class="card-text">Dentist at Peak Dental</p>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 25rem;">
+                    <img src="/images/Screenshot 2023-04-14 163944.png" class="card-img-top" alt="Dr. Jake Duong">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Jake Duong</h5>
+                        <p class="card-text">Dentist at Peak Dental</p>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 25rem;">
+                    <img src="/images/Screenshot 2023-04-14 163932.png" class="card-img-top" alt="Dr. Jake Duong">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Jake Duong</h5>
+                        <p class="card-text">Dentist at Peak Dental</p>
+
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr-text " data-content="Dentalcare" >
+        <div class="alert alert-info " role="alert">
+            It is a healthcare facility that specializes in providing a wide range of
+      services related to the diagnosis, prevention, and treatment of oral
+      diseases.
+          </div>
+          <hr class="hr-text " data-content="Services" >
+          <div class="alert alert-info " role="alert">
+            Dental clinics offer a range of services, including routine check-ups and
+            cleanings, x-rays, fillings, root canals, tooth extractions, crowns,
+            bridges, and other dental procedures.
+            </div>
+            <hr class="hr-text " data-content="Hardware" >
+            <div class="alert alert-info " role="alert">
+                Equipment used in dental clinics typically contains specialized tools and
+      equipment such as dental chairs, dental drills, and dental x-ray machines
+      to facilitate the provision of dental care. Patients can schedule
+      appointments to see a dentist or hygienist, and some clinics may also
+      offer emergency admission services.
+              </div>
+              <div class="position-relative">
+                <img style="width: 100%; height: 30%; position: relative;" src="/images/Screenshot 2023-04-14 172729.png " class="img-fluid" alt="..." >
+                <button class="btn btn-light position-absolute top-50 start-50 translate-middle">Join Us</button>
+
+              </div>
+               
+            </div>
+            <div class=" .container-fluid" style="background-color: #0F3A6C;">
+                <div class="row">
+                    <div class="col">
+                      <img style="width: 20%; height: 40%; ; margin: 0.5rem;" src="/images/Screenshot 2023-04-15 044341.png" > 
+                      <p class="fs-5">58</p>
+                      <p class="fs-5">Happy Clients</p>
+
+                    </div>
+                    <div class="col">
+                        <img style="width: 20%; height: 40%; ; margin: 0.5rem;" src="/images/Screenshot 2023-04-15 044355.png" > 
+                        <p class="fs-5">700</p>
+                        <p class="fs-5">Surgery Completed</p>
+                    </div>
+                    <div class="col">
+                        <img style="width: 20%; height: 40%; ; margin: 0.5rem;" src="/images/Screenshot 2023-04-15 044407.png" > 
+                        <p class="fs-5">58</p>
+                        <p class="fs-5">Surgery Completed</p>
+                    </div>
+                    <div class="col">
+                        <img style="width: 20%; height: 40%; ; margin: 0.5rem;" src="/images/Screenshot 2023-04-15 044415.png" > 
+                        <p class="fs-5">50</p>
+                        <p class="fs-5">Worldwide Branch</p>
+                    </div>
+                  </div>
+
+            </div>
+            </body>
+            <div class="container">
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-6 col-md-2 mb-3 fotr">
+                      <h5>Our Pages</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Home</a
+                          >
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >About</a
+                          >
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Services</a
+                          >
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Contact</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3 fotr">
+                      <h5>Health Care</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Drugs
+                          </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Devices</a
+                          >
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Consumer Safety</a
+                          >
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover">
+                            Lastet News
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3 fotr">
+                      <h5>More Infomration</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Deilvery</a
+                          >
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >FAQs</a
+                          >
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a href="#" class="nav-link p-0 text-muted footer-hover"
+                            >Our Mission
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-5 offset-md-1 mb-3 fotr">
+                      <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden"
+                            >Email address</label
+                          >
+                          <input
+                            id="newsletter1"
+                            type="text"
+                            class="form-control"
+                            placeholder="Email address"
+                          />
+                          <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+          
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+                  >
+                    <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3">
+                        <a class="link-dark" href="#"
+                          ><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" /></svg
+                        ></a>
+                      </li>
+                      <li class="ms-3">
+                        <a class="link-dark" href="#"
+                          ><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" /></svg
+                        ></a>
+                      </li>
+                      <li class="ms-3">
+                        <a class="link-dark" href="#"
+                          ><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" /></svg
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+            </body>
+</html>
